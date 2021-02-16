@@ -1,0 +1,87 @@
+/* Showcase */
+.showcase {
+  height: 400px;
+  background-color: var(--blue-color);
+  color: #fff;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 150px;
+}
+
+.showcase p {
+  margin: 25px 0;
+}
+
+.showcase .grid {
+  grid-template-columns: 55% 45%;
+  gap: 30px;
+  overflow: visible;
+}
+
+.showcase-text {
+  animation: slideInFromLeft 1s ease-in;
+}
+
+.showcase-form {
+  position: relative;
+  top: 60px;
+  height: 300px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+  justify-self: flex-end;
+  animation: slideInFromRight 1s ease-in;
+}
+
+.showcase-form h2 {
+  font-size: 30px;
+}
+
+.showcase-form .form-control {
+  margin: 30px 0;
+}
+
+.showcase-form input:focus {
+  outline: none;
+}
+
+.showcase-form input[type="text"],
+.showcase-form input[type="email"],
+.showcase-form input[type="password"] {
+  border: 0;
+  border-bottom: 1px solid#b4becb;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+}
+
+.name {
+  display: flex;
+}
+
+.showcase::after,
+.showcase::before {
+  content: "";
+  position: absolute;
+  height: 150px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  transform: skewY(-4deg);
+  width: 100%;
+}
+
+.showcase-text p {
+  font-size: 20px;
+}
+
+.showcase-text h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.showcase h2 {
+  font-size: 38px;
+  font-weight: 200;
+}
